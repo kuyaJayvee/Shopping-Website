@@ -1,6 +1,6 @@
 <template>
-    <div>
-       
+    <div class="py-11 px-3">
+        <slot></slot>
     </div>
 </template>
 

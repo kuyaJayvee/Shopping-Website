@@ -16,7 +16,8 @@
 useHead({
     title: "Home | Shoppe",
     meta: [
-        {name: "description", content: "Original and cheap product"}
+        { name: "description", content: "Original and cheap product" },
+        { name: "viewport", content: "width=device-width, initial-scale=1"}
     ]
 })
 </script>

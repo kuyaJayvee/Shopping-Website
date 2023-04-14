@@ -24,6 +24,12 @@
 const { product } = defineProps(['product'])
 let items = [] 
 const setLocalStorage = () => {
+    if (localStorage.getItem('item')) {
+        //existing item
+        let item = JSON.parse(localStorage.getItem('item'))
+        items.push(...item)
+    }
+    // new item
     items.push(product)
     localStorage.setItem('item', JSON.stringify(items))
 }
